@@ -5,7 +5,7 @@ Bundler.require(:default)
 module SimpleCov::Formatter
   class ShieldFormatter
     VERSION = '0.0.1'
-    SHIELD_ROOT = 'http://img.shields.io/badge/'
+    SHIELD_ROOT = 'http://img.shields.io/badge'
 
     @@config = {
       :badge_name => 'coverage',
@@ -23,7 +23,6 @@ module SimpleCov::Formatter
       generate_shield
     end
 
-    private
     def generate_shield
       File.open(shield_file_path, 'w') do |file|
         file.write HTTParty.get(shield_url).parsed_response
@@ -31,7 +30,7 @@ module SimpleCov::Formatter
     end
 
     def shield_url
-      "#{SHIELD_ROOT}/#{config[:badge_name]}-#{@coverage_percent}%-#{color}.svg"
+      "#{SHIELD_ROOT}/#{@@config[:badge_name]}-#{@coverage_percent}%-#{color}.svg"
     end
 
     def shield_file_path
@@ -39,7 +38,7 @@ module SimpleCov::Formatter
     end
 
     def coverage_percent(result)
-      result.covered_percent.round(config[:precision])
+      result.covered_percent.round(@@config[:precision])
     end
 
     def color

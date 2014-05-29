@@ -1,7 +1,14 @@
 # encoding: utf-8
-Bundler.require(:default, :test)
 
-require 'lib/simplecov-shield'
+require 'bundler'
+Bundler.require(:default, :development)
+
+#lib = File.expand_path('../../lib', __FILE__)
+#$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+#require 'lib/simplecov_shield'
+require 'simplecov'
+require File.expand_path('../../lib/simplecov_shield', __FILE__)
 
 HELPER_FILE_PATH = File.expand_path('../assets', __FILE__)
 
