@@ -1,0 +1,1 @@
+SimpleCov Formatter to generate coverage badge via Shields.io
