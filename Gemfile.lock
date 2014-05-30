@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    simplecov-shield (0.0.1)
+    simplecov-shield (0.0.2)
       httparty (~> 0.13.0)
       simplecov (~> 0.8.2)
 
