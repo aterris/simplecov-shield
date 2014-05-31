@@ -33,12 +33,6 @@ SimpleCov.formatter = SimpleCov::Formatter::ShieldFormatter
 
 Shield will be generated and save at `coverage/coverage.svg`
 
-## Examples
-
-![Standard Badge](spec/assets/coverage.svg)
-![Flat Badge](spec/assets/coverage-flat.svg)
-
-
 ## Configuration
 
 ````
