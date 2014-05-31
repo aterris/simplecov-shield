@@ -31,7 +31,7 @@ require 'simplecov-shield'
 SimpleCov.formatter = SimpleCov::Formatter::ShieldFormatter
 ```
 
-Shield will be generated and save at `coverage/coverage.svg`
+Badge will be generated at `coverage/coverage.svg`
 
 ## Configuration
 
