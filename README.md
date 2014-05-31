@@ -8,6 +8,20 @@
 gem install simplecov-shield
 ```
 
+## Installation
+
+Add this line to your application's Gemfile
+
+```
+gem 'simplecov-shield'
+```
+
+Or install it yourself
+
+```
+gem install simplecov-shield
+```
+
 ## Usage
 
 ```
