@@ -4,12 +4,6 @@
 
 ## Install
 
-```
-gem install simplecov-shield
-```
-
-## Installation
-
 Add this line to your application's Gemfile
 
 ```
