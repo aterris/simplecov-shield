@@ -21,11 +21,11 @@ Shield will be generated and save at `coverage/coverage.svg`
 
 #### Options
 
-| Name       | Description                    | Default    |
-| ---------- | ------------------------------ | ---------- |
-| badge_name | Badge Title                    | 'coverage' |
-| style      | Badge Style ['normal', 'flat'] | 'normal'   |
-| precision  | Coverage Percent Precision     | 0          |
+| Name       | Description                 | Default    | Allowed          |
+| ---------- | --------------------------- | ---------- | ---------------- |
+| badge_name | badge title                 | 'coverage' | String           |
+| style      | badge style                 | :normal    | :normal, :flat   |
+| precision  | coverage percent precision  | 0          | Integer          |
 
 #### Configure
 
@@ -33,7 +33,6 @@ Shield will be generated and save at `coverage/coverage.svg`
 SimpleCov::Formatter::ShieldFormatter.config[:badge_name] = 'cov'
 SimpleCov::Formatter::ShieldFormatter.config[:style]      = 'flat'
 SimpleCov::Formatter::ShieldFormatter.config[:precision]  = 2
-
 ````
 
 ## Contributing
@@ -46,4 +45,4 @@ see [LICENSE](LICENSE)
 
 ## Copyright
 
-Copyright (c) 2014 Andrew Terris, Lesley Dennison. See LICENSE for details.
+Copyright (c) 2014 Andrew Terris, Lesley Dennison
