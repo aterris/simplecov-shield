@@ -3,7 +3,7 @@
 require 'simplecov'
 require 'httparty'
 
-module SimpleCov::Formatter::ShieldFormatter
+class SimpleCov::Formatter::ShieldFormatter
   SHIELD_ROOT = 'http://img.shields.io/badge'
   STYLES = ['flat']
 
