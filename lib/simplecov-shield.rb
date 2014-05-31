@@ -56,6 +56,6 @@ class SimpleCov::Formatter::ShieldFormatter
   end
 
   @config.each do |key, val|
-    define_method(key) { ShieldFormatter.config[key] }
+    define_method(key) { self.class.config[key] }
   end
 end
