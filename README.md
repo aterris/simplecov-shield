@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/aterris/simplecov-shield.svg?branch=master)](https://travis-ci.org/aterris/simplecov-shield)
 [![Code Climate](http://img.shields.io/codeclimate/github/aterris/simplecov-shield.svg)](https://codeclimate.com/github/aterris/simplecov-shield)
 [![Code Climate](http://img.shields.io/codeclimate/coverage/github/aterris/simplecov-shield.svg)](https://codeclimate.com/github/aterris/simplecov-shield)
-[![Code Climate](http://img.shields.io/codeclimate/coverage/github/aterris/simplecov-shield.svg)](https://codeclimate.com/github/aterris/simplecov-shield)
+[![Dependency Status](https://gemnasium.com/aterris/simplecov-shield.svg)](https://gemnasium.com/aterris/simplecov-shield)
 
  
 [SimpleCov](https://github.com/colszowka/simplecov) Formatter to generate coverage badge via [Shields.io](http://shields.io/)
