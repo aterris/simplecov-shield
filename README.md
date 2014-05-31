@@ -19,7 +19,11 @@ Shield will be generated and save at `coverage/coverage.svg`
 
 ## Configuration
 
-#### Options
+````
+SimpleCov::Formatter::ShieldFormatter.config[:option] = value
+````
+
+##### Options
 
 | Name       | Description                 | Default    | Allowed          |
 | ---------- | --------------------------- | ---------- | ---------------- |
@@ -27,13 +31,6 @@ Shield will be generated and save at `coverage/coverage.svg`
 | style      | badge style                 | :normal    | :normal, :flat   |
 | precision  | coverage percent precision  | 0          | Integer          |
 
-#### Configure
-
-````
-SimpleCov::Formatter::ShieldFormatter.config[:badge_name] = 'cov'
-SimpleCov::Formatter::ShieldFormatter.config[:style]      = 'flat'
-SimpleCov::Formatter::ShieldFormatter.config[:precision]  = 2
-````
 
 ## Contributing
 
