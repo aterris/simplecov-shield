@@ -36,6 +36,7 @@ Badge will be generated at `coverage/coverage.svg`
 ## Examples
 
 ![standard badge](https://cdn.rawgit.com/aterris/simplecov-shield/master/spec/assets/coverage.svg)
+
 ![flat badge](https://cdn.rawgit.com/aterris/simplecov-shield/master/spec/assets/coverage-flat.svg)
 
 ## Configuration
