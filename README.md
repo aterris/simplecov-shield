@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/simplecov-shield.svg)](http://badge.fury.io/rb/simplecov-shield)
 [![Build Status](https://travis-ci.org/aterris/simplecov-shield.svg?branch=master)](https://travis-ci.org/aterris/simplecov-shield)
 [![Code Climate](http://img.shields.io/codeclimate/github/aterris/simplecov-shield.svg)](https://codeclimate.com/github/aterris/simplecov-shield)
-[![Code Climate](http://img.shields.io/codeclimate/coverage/github/aterris/simplecov-shield.svg)](https://codeclimate.com/github/aterris/simplecov-shield)
+[![Coverage Status](https://img.shields.io/coveralls/aterris/simplecov-shield.svg)](https://coveralls.io/r/aterris/simplecov-shield?branch=master)
 [![Dependency Status](https://gemnasium.com/aterris/simplecov-shield.svg)](https://gemnasium.com/aterris/simplecov-shield)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
