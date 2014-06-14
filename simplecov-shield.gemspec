@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'simplecov-shield'
-  spec.version       = '0.0.3'
+  spec.version       = '0.1.0'
   spec.authors       = ['Andrew Terris', 'Lesley Dennison']
   spec.email         = ['atterris@gmail.com']
   spec.description   = %q{Shield generator for SimpleCov}
@@ -14,11 +14,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(spec)/})
   spec.require_path  = 'lib'
 
-  spec.add_runtime_dependency 'httparty', '~> 0.13.0'
-  spec.add_runtime_dependency 'simplecov', '~> 0.8.2'
+  spec.add_runtime_dependency 'httparty'
+  spec.add_runtime_dependency 'simplecov'
 
-  spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'codeclimate-test-reporter'
+  spec.add_development_dependency 'coveralls'
 end

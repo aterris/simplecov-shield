@@ -1,6 +1,9 @@
 # encoding: utf-8
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
+
+if ENV['TRAVIS'] == 'true'
+  require 'coveralls'
+  Coveralls.wear!
+end
 
 require 'simplecov-shield'
 
