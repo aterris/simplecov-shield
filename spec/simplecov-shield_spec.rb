@@ -59,31 +59,31 @@ describe SimpleCov::Formatter::ShieldFormatter do
   describe '#shield_url' do
     it 'should generate a green shield url' do
       allow(@formatter).to receive(:coverage_percent).and_return(99)
-      @formatter.shield_url.should == 'http://img.shields.io/badge/coverage-99%25-brightgreen.svg'
+      expect(@formatter.shield_url).to eq('http://img.shields.io/badge/coverage-99%25-brightgreen.svg')
     end
 
     it 'should generate a yellow shield url' do
       allow(@formatter).to receive(:coverage_percent).and_return(85)
-      @formatter.shield_url.should == 'http://img.shields.io/badge/coverage-85%25-yellow.svg'
+      expect(@formatter.shield_url).to eq('http://img.shields.io/badge/coverage-85%25-yellow.svg')
     end
 
     it 'should generate a red shield url' do
       allow(@formatter).to receive(:coverage_percent).and_return(68)
-      @formatter.shield_url.should == 'http://img.shields.io/badge/coverage-68%25-red.svg'
+      expect(@formatter.shield_url).to eq('http://img.shields.io/badge/coverage-68%25-red.svg')
     end
 
     it 'should append flat style option when set' do
       allow(@formatter).to receive(:coverage_percent).and_return(99)
 
       SimpleCov::Formatter::ShieldFormatter.config[:style] = 'flat'
-      @formatter.shield_url.should == 'http://img.shields.io/badge/coverage-99%25-brightgreen.svg?style=flat'
+      expect(@formatter.shield_url).to eq('http://img.shields.io/badge/coverage-99%25-brightgreen.svg?style=flat')
     end
 
     it 'should not append invalid styles' do
       allow(@formatter).to receive(:coverage_percent).and_return(99)
 
       SimpleCov::Formatter::ShieldFormatter.config[:style] = 'fake'
-      @formatter.shield_url.should == 'http://img.shields.io/badge/coverage-99%25-brightgreen.svg'
+      expect(@formatter.shield_url).to eq('http://img.shields.io/badge/coverage-99%25-brightgreen.svg')
     end
   end
 
@@ -98,12 +98,12 @@ describe SimpleCov::Formatter::ShieldFormatter do
     end
 
     it 'should generate coverage percent' do
-      @formatter.coverage_percent.should == 97
+      expect(@formatter.coverage_percent).to eq(97)
     end
 
     it 'should generate coverage with configured precision' do
       SimpleCov::Formatter::ShieldFormatter.config[:precision] = 2
-      @formatter.coverage_percent.should == 97.33
+      expect(@formatter.coverage_percent).to eq(97.33)
     end
   end
 
@@ -111,7 +111,7 @@ describe SimpleCov::Formatter::ShieldFormatter do
     it 'should return config' do
       formatter = SimpleCov::Formatter::ShieldFormatter
 
-      formatter.config.should == formatter.instance_variable_get('@config')
+      expect(formatter.config).to eq(formatter.instance_variable_get('@config'))
     end
   end
 end
