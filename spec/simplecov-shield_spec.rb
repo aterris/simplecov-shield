@@ -28,29 +28,19 @@ describe SimpleCov::Formatter::ShieldFormatter do
       allow(@formatter).to receive(:generate_shield).and_call_original
     end
 
-    it 'should open the shield file' do
-      coverage_path = File.expand_path('../../coverage', __FILE__)
-
-      expect(File).to receive(:open)
-        .with("#{coverage_path}/coverage.svg", 'w')
-
-      @formatter.generate_shield
-    end
-
     it 'should call shields.io api' do
       response = double(HTTParty::Response)
-      allow(response).to receive(:parsed_response)
+      allow(response).to receive(:parsed_response).and_return('image content')
 
       expect(HTTParty).to receive(:get)
         .with('http://img.shields.io/badge/coverage-97%25-brightgreen.svg')
         .and_return(response)
 
-      @formatter.generate_shield
-    end
-
-    it 'should write the shield to the file' do
+      coverage_path = File.expand_path('../../coverage', __FILE__)
       shield = File.read("#{ASSETS_PATH}/coverage.svg")
-      expect_any_instance_of(File).to receive(:write).with(shield)
+
+      expect(File).to receive(:binwrite)
+                          .with("#{coverage_path}/coverage.svg", 'image content')
 
       @formatter.generate_shield
     end
