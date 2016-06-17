@@ -47,12 +47,12 @@ SimpleCov::Formatter::ShieldFormatter.config[:option] = value
 
 ##### Options
 
-| Name       | Description                 | Default    | Allowed          |
-| ---------- | --------------------------- | ---------- | ---------------- |
-| badge_name | badge title                 | 'coverage' | String           |
-| style      | badge style                 | :normal    | :normal, :flat   |
-| precision  | coverage percent precision  | 0          | Integer          |
-
+| Name        | Description                 | Default    | Allowed          |
+| ----------- | --------------------------- | ---------- | ---------------- |
+| badge_name  | badge title                 | 'coverage' | String           |
+| style       | badge style                 | :normal    | :normal, :flat   |
+| precision   | coverage percent precision  | 0          | Integer          |
+| file_format | badge file format           | 'svg'      | String           |
 
 ## Contributing
 
