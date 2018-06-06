@@ -18,6 +18,11 @@ class SimpleCov::Formatter::ShieldFormatter
     generate_shield
   end
 
+  def run(covered_percent)
+    @result = OpenStruct.new({covered_percent: covered_percent})
+    generate_shield
+  end
+
   def generate_shield
     File.open(shield_file_path, 'w') do |file|
       file.write HTTParty.get(shield_url).parsed_response

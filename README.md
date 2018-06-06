@@ -37,6 +37,10 @@ Or use the executable
 simplecov-shield 90
 ```
 
+```ruby
+SimpleCov::Formatter::ShieldFormatter.new.run(90)
+```
+
 Badge will be generated at `coverage/coverage.svg`
 
 ## Examples
