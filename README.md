@@ -7,7 +7,7 @@
 [![Dependency Status](https://gemnasium.com/aterris/simplecov-shield.svg)](https://gemnasium.com/aterris/simplecov-shield)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
- 
+
 [SimpleCov](https://github.com/colszowka/simplecov) Formatter to generate coverage badge via [Shields.io](http://shields.io/)
 
 ## Install
@@ -29,6 +29,12 @@ gem install simplecov-shield
 ```
 require 'simplecov-shield'
 SimpleCov.formatter = SimpleCov::Formatter::ShieldFormatter
+```
+
+Or use the executable
+
+```
+simplecov-shield 90
 ```
 
 Badge will be generated at `coverage/coverage.svg`

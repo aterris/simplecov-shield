@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'simplecov-shield'
+
+unless ARGV[0]
+  puts "required covered percent"
+else
+  SimpleCov::Formatter::ShieldFormatter.new.format OpenStruct.new(covered_percent: ARGV[0].to_i)
+end
