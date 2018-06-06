@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/aterris/simplecov-shield'
   spec.license       = 'MIT'
 
+  spec.executables << 'simplecov-shield'
   spec.files         = ['lib/simplecov-shield.rb']
   spec.test_files    = spec.files.grep(%r{^(spec)/})
   spec.require_path  = 'lib'
