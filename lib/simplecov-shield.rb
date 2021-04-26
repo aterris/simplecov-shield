@@ -25,10 +25,10 @@ class SimpleCov::Formatter::ShieldFormatter
   end
 
   def shield_url
-    url = "#{SHIELD_ROOT}/#{badge_name}-#{coverage_percent}%-#{color}.svg"
+    url = "#{SHIELD_ROOT}/#{badge_name}-#{coverage_percent}%25-#{color}.svg"
     url += "?style=#{style}" if STYLES.include? style
 
-    URI.encode(url)
+    CGI.escapeElement(url, "%")
   end
 
   def coverage_percent
